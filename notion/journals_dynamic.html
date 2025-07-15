@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journals - Dynamic</title>
+    <style>
+        .journals-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .journal-item {
+            flex: 0 0 auto;
+        }
+        .journal-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .loading {
+            text-align: center;
+        }
+        .error {
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">Loading journals...</div>
+    <div id="error" class="error" style="display: none;"></div>
+    <div id="journals-container" class="journals-grid"></div>
+
+    <script src="journals.js"></script>
+</body>
+</html>
